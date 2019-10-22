@@ -18,7 +18,7 @@
 class Socket{
 public:
     Socket();
-    ~Socket();
+    virtual ~Socket();
     virtual bool Send(const char* buf, int len);
     virtual bool Recv(char *buf, int len);
 	virtual bool SetAddr(int port, const char* addr = nullptr);
