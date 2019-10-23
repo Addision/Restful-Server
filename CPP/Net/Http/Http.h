@@ -96,7 +96,7 @@ void Http::Loop()  //读取数据from web server
     char buf[2048];
     m_psocket->Recv(buf, sizeof(buf));
     cout << buf << endl;    
-    while(1)
+    while(IsActive())
     {
         usleep(1000000);
     }
