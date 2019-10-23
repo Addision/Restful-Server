@@ -12,7 +12,7 @@ public:
 
     bool Joinable() { return m_thread.joinable(); }
     void Join();
-    bool IsActive() { return false; }
+    bool IsActive() { return m_bActive; }
     std::thread::id GetThreadId() { return m_thread.get_id(); }
     virtual ~ThreadBase(){}
 
